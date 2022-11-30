@@ -8,7 +8,7 @@ const UserAuth = require("../middleware/UserAuth");
 
 router.get('/', HomeController.index);
 
-router.get("/user",AdminAuth, UserController.index);
+router.get("/user",UserAuth, UserController.index);
 router.get("/user/:id",AdminAuth, UserController.getUserById);
 router.post('/user', UserController.create);
 router.post("/recoverypass", UserController.recoveryPassword);
