@@ -15,6 +15,8 @@ router.post("/recoverypass", UserController.recoveryPassword);
 router.post("/changepassword", UserController.changePassword);
 router.post("/login", UserController.login);
 router.post("/validate",AdminAuth, HomeController.validate)
+router.post("/validate-user",UserAuth, HomeController.validateUser);
+
 
 router.put("/user",AdminAuth, UserController.edit);
 router.delete("/user/:id",AdminAuth, UserController.delete);

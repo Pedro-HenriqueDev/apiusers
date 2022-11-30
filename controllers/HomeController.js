@@ -7,6 +7,10 @@ class HomeController{
         res.status(200)
         res.send('Autenticado!');
     }
+    async validateUser(req, res){
+        res.status(200)
+        res.send('Autenticado!');
+    }
 
 }
 
